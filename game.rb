@@ -66,11 +66,8 @@ def straight?
       end
     end
   end
-  if counter >= 5
-    @straight_counter = true
-  else
-    []
-  end
+  counter >= 5 ? result : []
+  @straight_counter = true
 end
 
 
